@@ -422,29 +422,29 @@ void readSensor()
             irCaption = "Unavailable";
         break;
     }
-    if (redValue > greenValue && redValue > blueValue)
+    if (redValue > 235 && greenValue > 235 && blueValue > 235)
     {
-        objectColor = "  RED    "; 
-    }
-    else if (greenValue > redValue && greenValue > blueValue)
-    {
-        objectColor = "  GREEN  ";
-    }
-    else if (blueValue > redValue && blueValue > greenValue)
-    {
-        objectColor = "  BLUE   ";
-    }
-    else if (redValue > greenValue && greenValue > blueValue)
-    {
-        objectColor = "  ORANGE ";
-    }
-    else if (redValue > 245 && greenValue > 245 && blueValue > 245)
-    {
-        objectColor = "  WHITE  ";
+        objectColor = "  WHITE  "; 
     }
     else if (redValue < 100 && greenValue < 100 && blueValue < 100)
     {
         objectColor = "  BLACK  ";
+    }
+    else if (redValue > 240 && greenValue > 200 && blueValue < 200)
+    {
+        objectColor = "  ORANGE ";
+    }
+    else if (redValue > 230 && redValue > greenValue && redValue > blueValue)
+    {
+        objectColor = "  RED    ";
+    }
+    else if (greenValue > 190 && greenValue > redValue && greenValue > blueValue)
+    {
+        objectColor = "  GREEN  ";
+    }
+    else if (blueValue > 180 && blueValue > redValue && blueValue > greenValue)
+    {
+        objectColor = "  BLUE   ";
     }
     else
     {
@@ -472,7 +472,7 @@ void lcdSensorUpdate()
     lcd.setCursor (7, 1);
     lcd.print (objectColor);
     //3rd Row
-    lcd.setCursor (7, 1);
+    lcd.setCursor (7, 2);
     lcd.print (irCaption);    
 }
 
@@ -531,17 +531,17 @@ void playMode()
     }  
     if (stepCounter == 1)
     {
-        if (redValue > greenValue && redValue > blueValue)
+        if (redValue > 230 && redValue > greenValue && redValue > blueValue)
         {
             stepCounter = 2;
             readArray (rSavedData, rArrayIndex);
         }
-        else if (greenValue > redValue && greenValue > blueValue)
+        else if (greenValue > 190 && greenValue > redValue && greenValue > blueValue)
         {
             stepCounter = 3;
             readArray (gSavedData, gArrayIndex);
         }
-        else if (blueValue > redValue && blueValue > greenValue)
+        else if (blueValue > 180 && blueValue > redValue && blueValue > greenValue)
         {
             stepCounter = 4;
             readArray (bSavedData, bArrayIndex);
