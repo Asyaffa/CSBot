@@ -1,5 +1,9 @@
 /*
     Written by Aqilla Rahman Musyaffa
+    
+    Based on:
+    > https://circuitdigest.com/microcontroller-projects/record-and-play-3d-printed-robotic-arm-using-arduino
+    > https://curiousscientist.tech/blog/20x4lcd-rotaryencoder-menu
 */
 
 //Servo Movement Debugger Version
