@@ -1,3 +1,7 @@
+/*
+    Written by Aqilla Rahman Musyaffa
+*/
+
 //Servo Movement Debugger Version
 //Library for LCD 20x4
 #include <LiquidCrystal_I2C.h>
