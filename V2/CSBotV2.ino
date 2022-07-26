@@ -1,3 +1,11 @@
+/*
+    Written by Aqilla Rahman Musyaffa
+    
+    Based on:
+    > https://circuitdigest.com/microcontroller-projects/record-and-play-3d-printed-robotic-arm-using-arduino
+    > https://curiousscientist.tech/blog/20x4lcd-rotaryencoder-menu
+*/
+
 //Color Identifier Version
 //Library for LCD 20x4
 #include <LiquidCrystal_I2C.h>
