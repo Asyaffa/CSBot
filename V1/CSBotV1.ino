@@ -4,6 +4,7 @@
     Based on:
     > https://circuitdigest.com/microcontroller-projects/record-and-play-3d-printed-robotic-arm-using-arduino
     > https://curiousscientist.tech/blog/20x4lcd-rotaryencoder-menu
+    > https://github.com/XRobots/BallContraption/tree/main/IK%20Arm
 */
 
 //Servo Movement Debugger Version
